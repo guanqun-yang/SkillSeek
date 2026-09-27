@@ -1,0 +1,4 @@
+{
+  "pdf-excel-diff": {"function_description": "Compares PDF tables with Excel cells and flags mismatched values.", "tags": ["pdf", "compare", "excel", "xlsx"], "when_to_use": "When checking a PDF report against its source spreadsheet."},
+  "video-silence-remover": {"function_description": "Removes silent segments from video files.", "tags": ["video", "remove silence", "audio level", "trim"]}
+}

@@ -1,0 +1,2021 @@
+{
+  "audio-extractor": {
+    "function_description": "Extracts audio from video files and saves as mono 16kHz WAV.",
+    "tags": [
+      "video",
+      "extract audio",
+      "wav conversion",
+      "speech analysis"
+    ],
+    "when_to_use": "When you need audio from a video for speech or energy analysis.",
+    "limitations": "Cannot process video formats unsupported by ffmpeg."
+  },
+  "audiobook": {
+    "function_description": "Convert fetched article text into a concatenated MP3 audiobook.",
+    "tags": [
+      "text",
+      "audiobook",
+      "tts",
+      "content verification"
+    ],
+    "when_to_use": "When you need to turn a web article or text document into an audio book.",
+    "limitations": "Cannot generate audio if required TTS API keys are missing and content is below the minimum length check."
+  },
+  "analyze-ci": {
+    "function_description": "Analyzes GitHub Action job logs and returns concise failure summary.",
+    "tags": [
+      "github-actions",
+      "analyze failures",
+      "root-cause",
+      "log snippets"
+    ],
+    "when_to_use": "Use when you need a concise summary of why a GitHub Action job failed."
+  },
+  "browser-testing": {
+    "function_description": "Measures load time, network requests, and performance metrics for a given URL using Playwright CDP.",
+    "tags": [
+      "url",
+      "measure performance",
+      "network timing",
+      "cls"
+    ],
+    "when_to_use": "Use when you need to diagnose page load speed or API response times."
+  },
+  "ac-branch-pi-model": {
+    "function_description": "Computes per-unit power flows for MATPOWER branch data, handling transformers and line charging.",
+    "tags": [
+      "matpower",
+      "compute flows",
+      "transformer handling",
+      "loading limits"
+    ],
+    "when_to_use": "Use when you need branch power flow values for AC optimal power flow analysis.",
+    "limitations": "Assumes MATPOWER format and per\u2011unit system; cannot handle non\u2011linear tap models."
+  },
+  "13f-analyzer": {
+    "function_description": "Analyzes fund holding summary data to report statistics and changes for specified quarters.",
+    "tags": [
+      "fund holdings",
+      "analyze holdings",
+      "compare quarters",
+      "top holders"
+    ],
+    "when_to_use": "When you need a quick summary or change analysis of a hedge fund\u2019s holdings for a specific quarter."
+  },
+  "csv-processing": {
+    "function_description": "Processes CSV files to read, filter, compute, and write data using pandas.",
+    "tags": [
+      "csv",
+      "read write",
+      "filter rows",
+      "handle missing"
+    ]
+  },
+  "automatic-speech-recognition": {
+    "function_description": "Transcribes audio segments to text using Whisper and aligns them with speaker diarization turns.",
+    "tags": [
+      "audio",
+      "transcribe",
+      "speaker diarization",
+      "alignment"
+    ],
+    "when_to_use": "Use after speaker diarization to generate speaker-labeled transcripts or subtitles from audio segments.",
+    "limitations": "Cannot transcribe segments shorter than 0.3 seconds or produce text for inaudible audio."
+  },
+  "custom-distance-metrics": {
+    "function_description": "Define custom distance functions for numpy array points used in clustering.",
+    "tags": [
+      "array",
+      "custom distance",
+      "clustering",
+      "parameterized metric"
+    ],
+    "when_to_use": "When you need a tailored similarity measure for clustering algorithms on your data.",
+    "limitations": "Custom Python distance functions are slower than built-in metrics and may not scale to large datasets."
+  },
+  "cvss-score-extraction": {
+    "function_description": "Extract CVSS v3 score from vulnerability JSON data using source priority.",
+    "tags": [
+      "json",
+      "extract cvss",
+      "fallback logic",
+      "severity assessment"
+    ],
+    "when_to_use": "Use when creating security reports that require CVSS scores from Trivy scan output.",
+    "limitations": "Returns 'N/A' for missing scores and assumes the data follows Trivy's nested CVSS structure."
+  },
+  "constraint-parser": {
+    "function_description": "Extract scheduling constraints from raw email text.",
+    "tags": [
+      "email",
+      "extract constraints",
+      "meeting scheduling",
+      "time windows"
+    ],
+    "when_to_use": "When you have an email requesting a meeting and need its time constraints."
+  },
+  "academic-pdf-redaction": {
+    "function_description": "Redacts specified identifying text patterns from PDF documents, preserving the References section.",
+    "tags": [
+      "pdf",
+      "redact text",
+      "blind review",
+      "author anonymity"
+    ],
+    "when_to_use": "Use when preparing a manuscript for blind peer review to remove author-identifying information.",
+    "limitations": "Cannot redact partial names or content in the References section; requires searchable text."
+  },
+  "citation-management": {
+    "function_description": "Generate BibTeX entries from DOIs, PMIDs, or arXiv IDs by extracting metadata.",
+    "tags": [
+      "bibtex",
+      "generate citations",
+      "metadata extraction",
+      "citation validation"
+    ],
+    "when_to_use": "When you need to convert DOIs, PMIDs, or arXiv IDs into properly formatted BibTeX entries."
+  },
+  "box-least-squares": {
+    "function_description": "Analyzes light curve arrays to compute a Box Least Squares periodogram and identify transit parameters.",
+    "tags": [
+      "lightcurve",
+      "detect transits",
+      "period search",
+      "compute stats"
+    ],
+    "when_to_use": "When you have cleaned light curve data and need to find periodic transit signals.",
+    "limitations": "Cannot detect grazing transits well and relies on proper period grid selection."
+  },
+  "civ6lib": {
+    "function_description": "Validates Civ6 district placement on map tiles and calculates adjacency bonuses.",
+    "tags": [
+      "civ6",
+      "validate placement",
+      "adjacency bonus",
+      "district limits"
+    ],
+    "when_to_use": "When you need to check if a district can be placed or compute its adjacency bonuses.",
+    "limitations": "Cannot validate placements on water, mountains, or natural wonders and assumes correct tile data."
+  },
+  "d3-visualization": {
+    "function_description": "Generate static D3.js visualizations (HTML/SVG) from CSV, TSV, or JSON data files.",
+    "tags": [
+      "csv",
+      "visualize",
+      "svg",
+      "chart"
+    ],
+    "when_to_use": "Use when the user requests a chart, graph, or other visualization from CSV/TSV/JSON data.",
+    "limitations": "Cannot generate animated or non-deterministic visualizations; only static, deterministic outputs are supported."
+  },
+  "data-reconciliation": {
+    "function_description": "Operates on spreadsheet tables to recover missing financial values using sum, YoY, share, and CAGR constraints.",
+    "tags": [
+      "spreadsheet",
+      "recover values",
+      "row sum",
+      "cagr"
+    ],
+    "when_to_use": "Use when a spreadsheet has missing cells but row totals, percentages, or growth rates are known.",
+    "limitations": "Cannot fill values lacking sufficient constraints or when data is inconsistent."
+  },
+  "attention-variants-from-papers": {
+    "function_description": "Implement custom transformer attention variant while keeping drop-in module interface.",
+    "tags": [
+      "transformer",
+      "custom attention",
+      "shape ledger",
+      "validation"
+    ],
+    "when_to_use": "When a paper modifies attention scores, branches, normalization, or head sharing but requires a drop-in transformer block.",
+    "limitations": "Cannot alter input/output shapes or mask semantics; assumes they remain unchanged."
+  },
+  "contribution-analysis": {
+    "function_description": "Analyzes a CSV dataset to compute factor contributions using R\u00b2 decomposition.",
+    "tags": [
+      "csv",
+      "r2 decomposition",
+      "factor analysis",
+      "dominant factor"
+    ],
+    "when_to_use": "When you have multiple correlated variables across categories and need to quantify each factor's contribution to response variance."
+  },
+  "dc-power-flow": {
+    "function_description": "Computes DC power flow on bus/branch grid data, producing bus angles and line flows.",
+    "tags": [
+      "grid data",
+      "dc power flow",
+      "line loading",
+      "thermal limits"
+    ],
+    "when_to_use": "Use when you need a linear approximation of AC power flow for economic dispatch or contingency analysis.",
+    "limitations": "Assumes lossless lines, flat voltage, and small angle approximations; cannot model resistive losses or voltage magnitude variations."
+  },
+  "azure-bgp": {
+    "function_description": "Analyzes Azure BGP topology JSON files to detect oscillation and route leaks and suggest policy fixes.",
+    "tags": [
+      "json",
+      "detect issues",
+      "policy fix",
+      "routing intent"
+    ],
+    "when_to_use": "Use when Azure Virtual WAN BGP shows flapping routes, oscillation, or unexpected route leaks.",
+    "limitations": "Cannot modify on-prem routers or disable Azure BGP sessions; only suggests policy-level fixes."
+  },
+  "casadi-ipopt-nlp": {
+    "function_description": "Creates and solves a CasADi nonlinear programming model using IPOPT.",
+    "tags": [
+      "nlp",
+      "solve optimization",
+      "initialize variables",
+      "extract solution"
+    ]
+  },
+  "dyn-object-masks": {
+    "function_description": "Detect moving objects in video frames and generate sparse binary masks.",
+    "tags": [
+      "video",
+      "motion detection",
+      "sparse mask",
+      "frame alignment"
+    ],
+    "when_to_use": "Use when you need to detect moving objects in video with camera motion."
+  },
+  "elevenlabs-tts": {
+    "function_description": "Converts input text into MP3 speech audio using ElevenLabs API.",
+    "tags": [
+      "text",
+      "text-to-speech",
+      "voice synthesis",
+      "audio concatenation"
+    ],
+    "when_to_use": "Use when you need to create spoken audio from a short text snippet.",
+    "limitations": "Cannot process text longer than ~5000 characters per request."
+  },
+  "docx": {
+    "function_description": "Replace placeholders in a .docx template, handling split runs, tables, headers, footers, and conditionals.",
+    "tags": [
+      "docx",
+      "fill template",
+      "tables",
+      "conditionals"
+    ],
+    "when_to_use": "When you need to populate a Word template with data while preserving formatting.",
+    "limitations": "Formatting beyond the first run may be lost; only {{KEY}} placeholders are supported."
+  },
+  "discover-important-function": {
+    "function_description": "Python repository files: analyze and rank potential fuzz targets.",
+    "tags": [
+      "python",
+      "select fuzz targets",
+      "rank functions",
+      "summarize tests"
+    ],
+    "when_to_use": "Use when you need to find the best functions to fuzz in a Python package.",
+    "limitations": "Cannot modify source code or execute it; only performs static analysis."
+  },
+  "dialogue_graph": {
+    "function_description": "Creates and manages dialogue graph structures, exporting to JSON and visualizing as images.",
+    "tags": [
+      "json",
+      "build graph",
+      "validate",
+      "visualize"
+    ],
+    "when_to_use": "Use when converting text to data, editing conversation flow, traversing dialogue trees, or visualizing dialogue flows.",
+    "limitations": "Visualization requires Graphviz binary installed; otherwise it cannot generate images."
+  },
+  "ffmpeg": {
+    "function_description": "Extract I-frames from video files using FFmpeg.",
+    "tags": [
+      "video",
+      "extract keyframes",
+      "image sequence",
+      "timestamp"
+    ],
+    "when_to_use": "When you need to obtain individual key frames from a video file.",
+    "limitations": "Assumes FFmpeg is installed and the input video is supported by FFmpeg."
+  },
+  "erlang-distribution": {
+    "function_description": "Erlang nodes \u2013 establish cluster connectivity, register global names, and perform distributed messaging and RPC.",
+    "tags": [
+      "erlang",
+      "distributed communication",
+      "node clustering",
+      "rpc"
+    ],
+    "when_to_use": "When you need to build a fault\u2011tolerant Erlang cluster with remote process calls.",
+    "limitations": "Assumes nodes share the same cookie and reachable network; cannot manage nodes behind firewalls."
+  },
+  "enterprise-artifact-search": {
+    "function_description": "Search enterprise artifacts and extract structured entities across linked documents.",
+    "tags": [
+      "artifact",
+      "multi-hop retrieval",
+      "entity extraction",
+      "reviewer extraction"
+    ],
+    "when_to_use": "When a query requires multi\u2011hop evidence across documents, chats, meetings, or PRs with precise artifact pointers.",
+    "limitations": "It cannot infer information; it only returns data present in grounded artifacts."
+  },
+  "erlang-concurrency": {
+    "function_description": "Erlang processes \u2013 create, spawn, link, monitor, and pass messages for concurrent execution.",
+    "tags": [
+      "erlang",
+      "spawn processes",
+      "message passing",
+      "fault tolerance"
+    ],
+    "when_to_use": "Apply processes for concurrent tasks requiring isolation and independent state."
+  },
+  "exoplanet-workflows": {
+    "function_description": "light curve data: guide selection of exoplanet detection workflow steps.",
+    "tags": [
+      "lightcurve",
+      "exoplanet detection",
+      "period search",
+      "signal validation"
+    ],
+    "when_to_use": "Use when planning an exoplanet search pipeline on photometric light curves.",
+    "limitations": "It only offers guidance; it does not execute detection algorithms or process data."
+  },
+  "ffmpeg-audio-processing": {
+    "function_description": "Processes audio tracks in video files using FFmpeg.",
+    "tags": [
+      "video",
+      "process audio",
+      "extract audio",
+      "normalize audio"
+    ],
+    "when_to_use": "Use when you need to extract, normalize, mix, or convert audio from video files."
+  },
+  "ffmpeg-media-info": {
+    "function_description": "Extracts metadata from video or audio files using ffprobe and ffmpeg.",
+    "tags": [
+      "media",
+      "extract metadata",
+      "codec info",
+      "resolution"
+    ],
+    "when_to_use": "When you need to retrieve video or audio file properties such as codec, resolution, or bitrate."
+  },
+  "energy-calculator": {
+    "function_description": "Calculates per-second RMS energy from a WAV audio file.",
+    "tags": [
+      "wav",
+      "calculate energy",
+      "silence detection",
+      "volume analysis"
+    ],
+    "when_to_use": "Use when you need per-second audio energy for silence or pause detection.",
+    "limitations": "Only supports WAV audio files as input."
+  },
+  "ffmpeg-video-editing": {
+    "function_description": "Processes video files to cut, trim, concatenate, and split segments.",
+    "tags": [
+      "video",
+      "cut",
+      "concatenate",
+      "split"
+    ],
+    "when_to_use": "Use when you need to cut, trim, concatenate, or split video segments.",
+    "limitations": "Cannot concatenate videos with different codecs using copy mode; re-encoding required."
+  },
+  "erlang-otp-behaviors": {
+    "function_description": "Erlang source files implement OTP behaviors to create stateful server processes.",
+    "tags": [
+      "erlang",
+      "define behavior",
+      "stateful server",
+      "state machine"
+    ],
+    "when_to_use": "Use when building reliable concurrent Erlang applications requiring process patterns."
+  },
+  "find-bugs": {
+    "function_description": "Analyze git diff of source code files to identify security bugs and code quality issues.",
+    "tags": [
+      "git",
+      "security review",
+      "code quality",
+      "vulnerability detection"
+    ],
+    "when_to_use": "When you need to audit a branch\u2019s changes for security vulnerabilities before merging.",
+    "limitations": "Cannot automatically fix issues; it only reports findings based on the provided diff."
+  },
+  "file-organizer": {
+    "function_description": "Organizes files in a directory by analyzing structure, finding duplicates, and moving them into a logical hierarchy.",
+    "tags": [
+      "files",
+      "organize",
+      "find duplicates",
+      "suggest structure"
+    ],
+    "when_to_use": "Use when folders are messy, contain duplicates, or lack a logical structure.",
+    "limitations": "Cannot delete files without user confirmation and assumes access to target directories."
+  },
+  "filler-word-processing": {
+    "function_description": "Processes JSON filler-word annotations to create cut segments for removing filler speech.",
+    "tags": [
+      "json",
+      "remove filler",
+      "merge segments",
+      "audio editing"
+    ],
+    "when_to_use": "Use when you have filler-word timestamps in JSON and want to cut them from audio or video.",
+    "limitations": "Cannot process non-JSON annotation files and assumes predefined word durations."
+  },
+  "economic-dispatch": {
+    "function_description": "Optimizes MATPOWER generator data to compute minimum-cost dispatch with reserves and generator limits.",
+    "tags": [
+      "matpower",
+      "dispatch optimization",
+      "reserve allocation",
+      "generator limits"
+    ],
+    "limitations": "OSQP may fail on ill-conditioned problems; CLARABEL is recommended for robustness."
+  },
+  "first-order-model-fitting": {
+    "function_description": "Fits first-order system model to experimental data to extract gain and time constant parameters.",
+    "tags": [
+      "data",
+      "fit model",
+      "first-order",
+      "parameter estimation"
+    ],
+    "when_to_use": "When you have step-response data and need to determine system gain and time constant.",
+    "limitations": "Assumes known ambient value and constant input; cannot model higher-order dynamics."
+  },
+  "egomotion-estimation": {
+    "function_description": "Classifies camera motion (stay, dolly, pan, tilt, roll) for each video frame.",
+    "tags": [
+      "video",
+      "classify motion",
+      "multi-label",
+      "optical flow"
+    ],
+    "when_to_use": "When you need to classify camera motion from video with possible multiple labels per frame.",
+    "limitations": "Assumes sufficient texture and lighting; may fail on low\u2011texture or low\u2011light video."
+  },
+  "flood-detection": {
+    "function_description": "Analyzes water level DataFrame to detect flood days and generate summary reports.",
+    "tags": [
+      "dataframe",
+      "flood detection",
+      "daily aggregation",
+      "water level"
+    ],
+    "when_to_use": "When you need to identify days with water levels exceeding flood thresholds.",
+    "limitations": "Assumes water level and thresholds share the same units; cannot resolve unit mismatches."
+  },
+  "finite-horizon-lqr": {
+    "function_description": "Linear system matrices (A, B, Q, R) \u2192 compute finite-horizon LQR gain and first control input.",
+    "tags": [
+      "state-space",
+      "lqr",
+      "mpc",
+      "riccati"
+    ],
+    "when_to_use": "Use when you need a control input for model predictive control at each timestep."
+  },
+  "fuzzy-match": {
+    "function_description": "Compares strings and finds best matches using fuzzy similarity metrics.",
+    "tags": [
+      "text",
+      "fuzzy match",
+      "similarity",
+      "entity resolution"
+    ],
+    "when_to_use": "Use when joining datasets on non-identical string keys."
+  },
+  "fjsp-baseline-repair-with-downtime-and-policy": {
+    "function_description": "Adjust a given FJSP baseline schedule to a feasible, lower\u2011makespan schedule respecting downtime and budget constraints.",
+    "tags": [
+      "schedule",
+      "repair schedule",
+      "downtime",
+      "budget"
+    ],
+    "when_to_use": "When the provided FJSP baseline is infeasible or has excessive makespan under downtime and policy limits.",
+    "limitations": "Cannot handle non\u2011integer time units and assumes all downtime windows are pre\u2011sorted."
+  },
+  "ffmpeg-format-conversion": {
+    "function_description": "Convert video or audio files between formats and codecs using FFmpeg.",
+    "tags": [
+      "media",
+      "convert format",
+      "transcode codec",
+      "batch conversion"
+    ],
+    "when_to_use": "When you need to change containers, codecs, or copy streams without re\u2011encoding."
+  },
+  "gemini-count-in-video": {
+    "function_description": "Analyzes video files to count pedestrians, cyclists, and vehicles.",
+    "tags": [
+      "video",
+      "count objects",
+      "pedestrian detection",
+      "traffic analysis"
+    ],
+    "when_to_use": "Use when you need to count pedestrians, cyclists, or vehicles in surveillance videos.",
+    "limitations": "It cannot process videos larger than 20\u202fMB without using the File API upload."
+  },
+  "gamma-phase-associator": {
+    "function_description": "Associates seismic pick DataFrames to earthquake events, estimating locations, times, and magnitudes.",
+    "tags": [
+      "dataframe",
+      "phase association",
+      "earthquake location",
+      "magnitude estimation"
+    ],
+    "when_to_use": "Use when you have P/S wave picks and station metadata and need to cluster them into earthquake events.",
+    "limitations": "Requires picks and stations DataFrames with specific columns; cannot process raw waveform data."
+  },
+  "gemini-video-understanding": {
+    "function_description": "Analyzes video files or YouTube URLs to generate summaries, transcripts, timestamps, and scene events.",
+    "tags": [
+      "video",
+      "analyze",
+      "summarize",
+      "transcribe"
+    ],
+    "when_to_use": "Use when you need a summary, transcript, timestamps, or scene detection for a video or YouTube link.",
+    "limitations": "Cannot analyze private, unlisted, or age\u2011restricted YouTube videos and requires videos under model token limits."
+  },
+  "glm-basics": {
+    "function_description": "Modify glm3.nml Fortran namelist file parameters using Python.",
+    "tags": [
+      "nml",
+      "edit parameters",
+      "python",
+      "lake model"
+    ],
+    "when_to_use": "When you need to change GLM configuration values without manually editing the namelist file.",
+    "limitations": "Cannot modify non-numeric or complex namelist entries and assumes standard formatting."
+  },
+  "glm-calibration": {
+    "function_description": "Adjust GLM namelist parameters and run simulation to minimize temperature RMSE.",
+    "tags": [
+      "nml",
+      "optimize parameters",
+      "run simulation",
+      "temperature calibration"
+    ],
+    "when_to_use": "When observed water temperatures differ significantly from GLM outputs.",
+    "limitations": "Cannot calibrate without a valid glm3.nml file or the GLM executable installed."
+  },
+  "excitation-signal-design": {
+    "function_description": "Designs step excitation signals for a system to collect identification data.",
+    "tags": [
+      "data",
+      "design signal",
+      "step test",
+      "parameter estimation"
+    ],
+    "when_to_use": "Use when you need to estimate parameters of an unknown system via a step test.",
+    "limitations": "Assumes the system is first-order and can accept a step input without saturation."
+  },
+  "geospatial-routing-data": {
+    "function_description": "Processes JSON routing data, validating coordinates and converting station IDs to internal indices.",
+    "tags": [
+      "json",
+      "validate routing",
+      "convert ids",
+      "distance calculation"
+    ],
+    "when_to_use": "When preparing a routing model or validating a routing report with station coordinates and IDs.",
+    "limitations": "Cannot process data missing required fields or using unsupported distance metrics."
+  },
+  "ffmpeg-video-filters": {
+    "function_description": "Applies ffmpeg video filters to modify MP4 video files.",
+    "tags": [
+      "video",
+      "apply filters",
+      "scale",
+      "crop"
+    ],
+    "when_to_use": "Use when you need to resize, crop, watermark, change speed, or add visual effects to a video."
+  },
+  "gmail-skill": {
+    "function_description": "Operates on Gmail messages to send emails, search, read, and manage labels or drafts.",
+    "tags": [
+      "gmail",
+      "send email",
+      "search email",
+      "manage labels"
+    ],
+    "when_to_use": "When you need to send, read, or search Gmail messages via command\u2011line scripts.",
+    "limitations": "It cannot access Gmail without prior OAuth authentication and a valid token."
+  },
+  "hex-grid-spatial": {
+    "function_description": "Operates on odd\u2011r hex grid coordinates to compute neighbors, distances, and tiles within a radius.",
+    "tags": [
+      "hexgrid",
+      "neighbor lookup",
+      "distance calculation",
+      "range query"
+    ]
+  },
+  "gtts": {
+    "function_description": "Convert plain text into an MP3 audio file using Google Text-to-Speech.",
+    "tags": [
+      "text",
+      "text-to-speech",
+      "concatenate audio",
+      "language selection"
+    ],
+    "when_to_use": "When you need to generate spoken audio from a long text document.",
+    "limitations": "It requires an internet connection and offers limited voice customization."
+  },
+  "hibernate-upgrade": {
+    "function_description": "Java source files: upgrade Hibernate 5 annotations and configurations to Hibernate 6.",
+    "tags": [
+      "java",
+      "upgrade code",
+      "migration guide",
+      "configuration changes"
+    ]
+  },
+  "fuzzing-python": {
+    "function_description": "Configure and run coverage-guided fuzz testing on Python code using Atheris.",
+    "tags": [
+      "python",
+      "fuzz testing",
+      "code coverage",
+      "native extensions"
+    ],
+    "when_to_use": "When you need to discover bugs by fuzzing a Python project or its native extensions.",
+    "limitations": "Cannot produce grammar-aware inputs for complex formats without a custom mutator."
+  },
+  "image_editing": {
+    "function_description": "Processes image files to resize, convert format, and apply various transformations using ImageMagick.",
+    "tags": [
+      "image",
+      "resize",
+      "format conversion",
+      "batch processing"
+    ],
+    "when_to_use": "When you need to quickly resize or convert multiple images from the command line.",
+    "limitations": "Requires ImageMagick installed; cannot process non-image files."
+  },
+  "hierarchical-taxonomy-clustering": {
+    "function_description": "Processes DataFrame category paths to generate a unified hierarchical taxonomy via clustering.",
+    "tags": [
+      "dataframe",
+      "taxonomy clustering",
+      "category naming",
+      "hierarchical clustering"
+    ],
+    "when_to_use": "When you have category paths from multiple sources and need a consolidated taxonomy.",
+    "limitations": "Assumes category paths are pre\u2011cleaned and limited to five hierarchical levels."
+  },
+  "jackson-security": {
+    "function_description": "Analyzes JSON input for Jackson deserialization security risks.",
+    "tags": [
+      "json",
+      "detect vulnerabilities",
+      "deserialization",
+      "security"
+    ]
+  },
+  "geospatial-analysis": {
+    "function_description": "GeoJSON geospatial data: project to metric CRS and calculate point-to-boundary distances.",
+    "tags": [
+      "geojson",
+      "calculate distance",
+      "spatial filter",
+      "project crs"
+    ],
+    "when_to_use": "When you need accurate distances between points and boundaries in GeoJSON data.",
+    "limitations": "Cannot compute distances correctly without projecting to a metric CRS."
+  },
+  "image-ocr": {
+    "function_description": "Extracts text from image files (JPG, PNG, etc.) using OCR.",
+    "tags": [
+      "image",
+      "extract text",
+      "ocr",
+      "structured data"
+    ],
+    "when_to_use": "Use when you need to extract text from scanned documents, screenshots, photos, receipts, or forms.",
+    "limitations": "Cannot process images larger than 5\u202fMB or with low resolution below 300\u202fDPI."
+  },
+  "imc-tuning-rules": {
+    "function_description": "Compute IMC-tuned PI controller gains from process gain and time constant.",
+    "tags": [
+      "python",
+      "calculate gains",
+      "imc tuning",
+      "pi controller"
+    ],
+    "when_to_use": "When you need PI controller gains for a first-order process with known gain and time constant.",
+    "limitations": "Only works for first-order processes; derivative gain is always zero."
+  },
+  "fuzzy-name-search": {
+    "function_description": "Search fund or stock metadata using fuzzy name matching.",
+    "tags": [
+      "fund",
+      "fuzzy search",
+      "stock",
+      "exact search"
+    ],
+    "when_to_use": "When you need to locate a fund or stock without knowing the exact name or accession number.",
+    "limitations": "Requires a quarter argument; cannot search without specifying the quarter."
+  },
+  "jakarta-namespace": {
+    "function_description": "Updates Java source files by replacing javax.* imports with jakarta.* equivalents.",
+    "tags": [
+      "java",
+      "replace imports",
+      "namespace migration",
+      "spring boot"
+    ],
+    "when_to_use": "When upgrading a Spring Boot project to version 3 and needing to migrate Java EE imports to Jakarta EE.",
+    "limitations": "Does not modify javax.sql or javax.crypto imports and assumes code uses only listed Java EE packages."
+  },
+  "gpt-multimodal": {
+    "function_description": "Analyzes one or multiple images to extract objects, text, colors, and scene descriptions.",
+    "tags": [
+      "image",
+      "analyze",
+      "extract text",
+      "compare frames"
+    ],
+    "when_to_use": "Use when you need to understand image content, extract text, or compare visual differences.",
+    "limitations": "Cannot process animated GIFs or images larger than 20\u202fMB, and requires clear, legible images."
+  },
+  "conditioning": {
+    "function_description": "Condition gravitational wave time-series data by high-pass filtering, resampling, cropping, and PSD estimation.",
+    "tags": [
+      "timeseries",
+      "data conditioning",
+      "high-pass filter",
+      "psd estimation"
+    ],
+    "when_to_use": "Use when raw gravitational-wave detector data contains low-frequency noise and needs preparation for matched filtering.",
+    "limitations": "Cannot process data shorter than required for PSD segments and assumes high-pass filtering precedes resampling."
+  },
+  "lab-unit-harmonization": {
+    "function_description": "Standardizes clinical lab dataset values by parsing formats, converting units, and formatting to two decimals.",
+    "tags": [
+      "tabular",
+      "unit conversion",
+      "format standardization",
+      "data cleaning"
+    ],
+    "when_to_use": "Use when harmonizing lab values from multiple sources with mixed units and inconsistent numeric formats."
+  },
+  "light-curve-preprocessing": {
+    "function_description": "Light curve data: clean outliers, filter quality flags, and flatten long-term trends.",
+    "tags": [
+      "lightcurve",
+      "preprocess",
+      "outlier removal",
+      "trend flattening"
+    ],
+    "when_to_use": "When you need to prepare raw light curve data for exoplanet period analysis.",
+    "limitations": "Cannot guarantee preservation of transit signals if flattening parameters are too aggressive."
+  },
+  "lomb-scargle-periodogram": {
+    "function_description": "light curve object \u2013 compute Lomb-Scargle periodogram to identify strongest period.",
+    "tags": [
+      "light curve",
+      "period detection",
+      "plot periodogram",
+      "model fitting"
+    ],
+    "when_to_use": "Use when you need to detect general periodic signals in unevenly sampled light curves."
+  },
+  "locational-marginal-prices": {
+    "function_description": "Extract locational marginal prices (LMPs) from CVXPY power flow model dual values.",
+    "tags": [
+      "python",
+      "extract lmp",
+      "dual values",
+      "binding lines"
+    ],
+    "when_to_use": "When you need LMPs after solving a CVXPY optimal power flow problem.",
+    "limitations": "Requires balance constraints to be stored; returns zero if dual values are unavailable."
+  },
+  "lean4-theorem-proving": {
+    "function_description": "Lean .lean files: automatically repair failing proofs and fill sorries using compiler-guided analysis.",
+    "tags": [
+      "lean",
+      "repair proof",
+      "search mathlib",
+      "sorry management"
+    ],
+    "when_to_use": "When you need to fix compilation errors or fill sorries in Lean 4 code."
+  },
+  "jax-skills": {
+    "function_description": "Handles JAX arrays: loading from .npy/.npz, applying transformations, and saving results.",
+    "tags": [
+      "npy",
+      "load",
+      "map reduce",
+      "gradient"
+    ],
+    "when_to_use": "Use when performing JAX\u2011based data loading, transformation, or model prototyping tasks.",
+    "limitations": "Supports only .npy/.npz files and limited ops (square, mean) for map/reduce."
+  },
+  "map-optimization-strategy": {
+    "function_description": "Optimizes item placements on a map grid while respecting placement constraints.",
+    "tags": [
+      "map",
+      "optimize placements",
+      "prune search",
+      "anchor search"
+    ],
+    "when_to_use": "When you need to place multiple items on a grid and exhaustive search is infeasible.",
+    "limitations": "May not find the global optimal placement, only a good local optimum."
+  },
+  "integral-action-design": {
+    "function_description": "applies integral action to MPC control signals to eliminate steady-state offset",
+    "tags": [
+      "control",
+      "offset correction",
+      "integral tuning",
+      "anti-windup"
+    ],
+    "when_to_use": "use when MPC shows steady-state error from model mismatch"
+  },
+  "marker": {
+    "function_description": "Converts PDF files to Markdown text while preserving LaTeX formulas and structure.",
+    "tags": [
+      "pdf",
+      "convert markdown",
+      "latex formulas",
+      "preserve structure"
+    ],
+    "when_to_use": "When you need a Markdown version of a PDF, especially with LaTeX content.",
+    "limitations": "Cannot process PDFs without the marker_single CLI and does not extract images."
+  },
+  "manufacturing-failure-reason-codebook-normalization": {
+    "function_description": "Assigns standardized codebook codes to failure reason text segments.",
+    "tags": [
+      "csv",
+      "assign code",
+      "normalize text",
+      "confidence"
+    ],
+    "when_to_use": "Use when engineers' failure reasons need to be normalized and matched to product codebook entries.",
+    "limitations": "Cannot assign a code if the station does not match the entry's allowed stations."
+  },
+  "maven-dependency-management": {
+    "function_description": "pom.xml files: define, scope, version, and manage Maven project dependencies.",
+    "tags": [
+      "pom",
+      "dependency management",
+      "scope control",
+      "version conflict"
+    ],
+    "when_to_use": "when adding, updating, or troubleshooting project libraries in a Maven build."
+  },
+  "mhc-algorithm": {
+    "function_description": "Applies doubly stochastic constraints to residual mixing matrices in PyTorch tensors.",
+    "tags": [
+      "tensor",
+      "apply constraints",
+      "sinkhorn projection",
+      "hyperconnections"
+    ],
+    "when_to_use": "Use when training deep networks that suffer stability issues."
+  },
+  "meteorology-driver-classification": {
+    "function_description": "Classifies dataset variables into driver categories based on physical meaning.",
+    "tags": [
+      "dataset",
+      "categorize",
+      "environmental",
+      "grouping"
+    ],
+    "when_to_use": "Use this guide when you need to group environmental variables into physical driver categories before analysis.",
+    "limitations": "Cannot classify variables that lack clear physical meaning or belong to multiple categories."
+  },
+  "gh-cli": {
+    "function_description": "Operates on GitHub pull requests to create, view, edit, and merge them via the command line.",
+    "tags": [
+      "github",
+      "manage pull requests",
+      "manage issues",
+      "repo operations"
+    ]
+  },
+  "memory-optimization": {
+    "function_description": "Optimizes Python code to reduce memory consumption while preserving functionality.",
+    "tags": [
+      "python",
+      "optimize memory",
+      "memory profiling",
+      "code transformation"
+    ]
+  },
+  "lean4-memories": {
+    "function_description": "Operates on Lean 4 proof sessions, storing and retrieving project-specific proof patterns and failures.",
+    "tags": [
+      "lean4",
+      "store memory",
+      "proof patterns",
+      "failed approach"
+    ],
+    "when_to_use": "Use when working on multi\u2011session Lean 4 formalizations that repeat similar proof patterns.",
+    "limitations": "Cannot retrieve memories from other projects due to scoped isolation."
+  },
+  "mesh-analysis": {
+    "function_description": "Analyzes binary STL files to compute volume and extract material ID of the largest component.",
+    "tags": [
+      "stl",
+      "volume extraction",
+      "material id",
+      "component analysis"
+    ],
+    "when_to_use": "Use when you need to analyze geometry, filter noise, or extract material IDs from STL meshes.",
+    "limitations": "Cannot process ASCII STL files; only binary STL is supported."
+  },
+  "multimodal-fusion": {
+    "function_description": "Processes video files to enhance speaker diarization by fusing audio with visual cues.",
+    "tags": [
+      "video",
+      "speaker diarization",
+      "face detection",
+      "lip movement"
+    ],
+    "when_to_use": "Use when processing video files with multiple visible speakers to improve diarization accuracy using visual cues.",
+    "limitations": "Cannot process audio-only files and may fail with poor lighting, angles, or high computational cost."
+  },
+  "nanogpt-training": {
+    "function_description": "Trains a GPT-2 scale model on tokenized dataset using mixed-precision on a single GPU.",
+    "tags": [
+      "dataset",
+      "train model",
+      "gpt",
+      "mixed precision"
+    ],
+    "when_to_use": "Use when training a GPT-2 sized model on a single GPU with tokenized data."
+  },
+  "nlp-research-repo-package-installment": {
+    "function_description": "environment.yml or requirements.txt files \u2013 set up matching Python environment and install dependencies",
+    "tags": [
+      "yaml",
+      "install dependencies",
+      "python version",
+      "environment setup"
+    ],
+    "when_to_use": "when reproducing an NLP research repo and need to align the environment with its declared dependencies",
+    "limitations": "cannot proceed if the repository lacks environment.yml or requirements.txt files"
+  },
+  "nws-flood-thresholds": {
+    "function_description": "Processes NWS flood thresholds CSV to extract numeric flood stage values for specified stations.",
+    "tags": [
+      "csv",
+      "extract thresholds",
+      "filter by state",
+      "flood stage"
+    ],
+    "when_to_use": "When you need flood stage thresholds for specific USGS stations from the NWS dataset.",
+    "limitations": "Cannot provide thresholds for stations absent from the NWS CSV or with missing values."
+  },
+  "obspy-data-api": {
+    "function_description": "Read seismic waveform files (e.g., SAC, MiniSEED) into an ObsPy Stream object.",
+    "tags": [
+      "waveform",
+      "read",
+      "metadata",
+      "stream"
+    ],
+    "when_to_use": "When you need to import seismogram files for further processing."
+  },
+  "maven-build-lifecycle": {
+    "function_description": "Explains Maven pom.xml lifecycle phases and how to run corresponding build commands.",
+    "tags": [
+      "pom",
+      "build lifecycle",
+      "profile activation",
+      "resource filtering"
+    ],
+    "when_to_use": "When you need to understand or execute Maven build phases for a Java project.",
+    "limitations": "Assumes a standard Maven project structure and does not execute commands itself."
+  },
+  "openai-tts": {
+    "function_description": "Convert input text into spoken audio files using OpenAI TTS API.",
+    "tags": [
+      "audio",
+      "text to speech",
+      "voice selection",
+      "tone instructions"
+    ],
+    "when_to_use": "When you need to generate spoken audio from a short or long text passage.",
+    "limitations": "Supports up to 4000 characters per request and limited voice options per model."
+  },
+  "openai-vision": {
+    "function_description": "Analyzes image files to extract descriptions, objects, text, colors, and compare multiple images.",
+    "tags": [
+      "image",
+      "analyze",
+      "compare",
+      "ocr"
+    ],
+    "when_to_use": "Use when you need to understand image content, extract text, or compare visual differences.",
+    "limitations": "It cannot process images larger than 20\u202fMB, animated GIFs, or heavily distorted content."
+  },
+  "output-validation": {
+    "function_description": "Validate video, interval JSON, and mask NPZ files for format and consistency.",
+    "tags": [
+      "video",
+      "validate",
+      "json",
+      "npz"
+    ],
+    "when_to_use": "After generating interval instructions and masks, before submission or hand\u2011off."
+  },
+  "matched-filtering": {
+    "function_description": "Applies matched filtering to conditioned detector data using a template waveform to compute SNR and locate peaks.",
+    "tags": [
+      "detector data",
+      "matched filter",
+      "snr calculation",
+      "template waveform"
+    ],
+    "when_to_use": "Use when you need to detect gravitational-wave signals in conditioned detector data.",
+    "limitations": "Requires template and data to share the same sampling rate and PSD length; not all approximants support frequency-domain generation."
+  },
+  "parallel-processing": {
+    "function_description": "list of items \u2013 parallelize processing across multiple CPU cores",
+    "tags": [
+      "list",
+      "parallel processing",
+      "grid search",
+      "shared data"
+    ],
+    "when_to_use": "when you have many independent tasks that each take more than 0.1 seconds",
+    "limitations": "cannot speed up very fast tasks and assumes each task runs independently"
+  },
+  "pause-detector": {
+    "function_description": "Processes an energy JSON file to detect low-energy pause segments.",
+    "tags": [
+      "json",
+      "detect pauses",
+      "audio analysis",
+      "local threshold"
+    ],
+    "when_to_use": "When you need to identify natural pauses in audio using pre-computed energy data.",
+    "limitations": "Cannot generate energy data; it only works with existing energy JSON files."
+  },
+  "modal-gpu": {
+    "function_description": "Runs a Python function on a cloud GPU and returns its result.",
+    "tags": [
+      "python",
+      "run gpu",
+      "remote execution",
+      "training"
+    ],
+    "when_to_use": "Use when you need to run a Python training script on a cloud GPU."
+  },
+  "object_counter": {
+    "function_description": "Counts objects in an image using a threshold and non\u2011maximum suppression.",
+    "tags": [
+      "image",
+      "count objects",
+      "deduplication",
+      "threshold"
+    ]
+  },
+  "pareto-optimization": {
+    "function_description": "Compute Pareto frontier of a pandas DataFrame based on specified objectives.",
+    "tags": [
+      "dataframe",
+      "pareto frontier",
+      "multi-objective",
+      "visualization"
+    ],
+    "when_to_use": "Use when you need to identify optimal trade\u2011offs among competing metrics in a dataset."
+  },
+  "pcap-triage-tshark": {
+    "function_description": "PCAP file: extract HTTP request fields and follow TCP streams with tshark.",
+    "tags": [
+      "pcap",
+      "extract http",
+      "follow tcp",
+      "packet analysis"
+    ],
+    "when_to_use": "When you need to quickly inspect HTTP traffic and payloads in a PCAP."
+  },
+  "pcap-analysis": {
+    "function_description": "Analyzes PCAP files to compute network statistics and detect anomalies.",
+    "tags": [
+      "pcap",
+      "compute statistics",
+      "entropy",
+      "graph metrics"
+    ],
+    "when_to_use": "When you need to extract traffic metrics and detect anomalies from a PCAP capture.",
+    "limitations": "Assumes PCAP contains IP and transport layers; detection thresholds are fixed."
+  },
+  "maven-plugin-configuration": {
+    "function_description": "Configure Maven plugins in a pom.xml file",
+    "tags": [
+      "xml",
+      "configure plugins",
+      "build automation",
+      "testing"
+    ],
+    "when_to_use": "Use when you need to set up or modify Maven plugin settings in a project's pom.xml.",
+    "limitations": "It does not run Maven builds or validate plugin compatibility."
+  },
+  "glm-output": {
+    "function_description": "Read GLM NetCDF output, convert heights to depths, and compute RMSE against observed temperatures.",
+    "tags": [
+      "netcdf",
+      "calculate rmse",
+      "temperature profile",
+      "depth conversion"
+    ],
+    "limitations": "Assumes lake depth is known and observations have compatible datetime and depth formats."
+  },
+  "mpc-horizon-tuning": {
+    "function_description": "Adjust MPC parameters for tension control in R2R systems.",
+    "tags": [
+      "mpc",
+      "parameter tuning",
+      "tension control",
+      "prediction horizon"
+    ],
+    "when_to_use": "When configuring MPC for tension tracking in roll-to-roll processes.",
+    "limitations": "Assumes linear model and constant dt; cannot handle nonlinear dynamics."
+  },
+  "pddl-skills": {
+    "function_description": "Generates, validates, and saves sequential plans from PDDL domain and problem files.",
+    "tags": [
+      "pddl",
+      "generate plan",
+      "validate plan",
+      "save plan"
+    ],
+    "limitations": "Cannot produce a plan when none exists or when PDDL parsing fails."
+  },
+  "obj-exporter": {
+    "function_description": "Export Three.js meshes or groups to OBJ files with world transforms",
+    "tags": [
+      "obj",
+      "export",
+      "merge geometries",
+      "component hierarchy"
+    ],
+    "when_to_use": "When you need to generate OBJ files for individual meshes or grouped components from a Three.js scene.",
+    "limitations": "Cannot export non-mesh objects and requires geometry to have world matrices updated."
+  },
+  "pymatgen": {
+    "function_description": "Converts crystal structure files between supported formats (e.g., CIF, POSCAR, XYZ).",
+    "tags": [
+      "structure",
+      "convert format",
+      "symmetry analysis",
+      "phase diagram"
+    ],
+    "when_to_use": "Use when you need to read, convert, or analyze crystal structure files in materials science."
+  },
+  "powerlifting": {
+    "function_description": "Computes powerlifting DOTS or IPF Good Lift points from lifter weight, total, sex, and equipment.",
+    "tags": [
+      "powerlifting",
+      "calculate points",
+      "dots score",
+      "goodlift coefficient"
+    ],
+    "when_to_use": "When you need to compare lifters across weight classes or equipment types.",
+    "limitations": "Cannot compute for bodyweights outside defined ranges or zero totals; returns zero."
+  },
+  "pid-controller": {
+    "function_description": "Implements a PID controller class in Python to compute control outputs from error and timestep.",
+    "tags": [
+      "python",
+      "pid control",
+      "tuning",
+      "anti-windup"
+    ]
+  },
+  "pdf-editing": {
+    "function_description": "Edit PDF files to replace existing text or permanently redact sensitive data.",
+    "tags": [
+      "pdf",
+      "replace text",
+      "redact",
+      "form fields"
+    ],
+    "when_to_use": "Use when you need to update or permanently remove specific text in a PDF.",
+    "limitations": "Cannot use black fill for redaction; white fill is required."
+  },
+  "pptx": {
+    "function_description": "pptx file: create, edit, or analyze presentation content and design elements.",
+    "tags": [
+      "pptx",
+      "create edit",
+      "extract text",
+      "design analysis"
+    ],
+    "when_to_use": "When a user wants to create, modify, or examine a PowerPoint presentation."
+  },
+  "pubchem-database": {
+    "function_description": "Chemical identifiers: query PubChem to locate compounds and retrieve their molecular properties.",
+    "tags": [
+      "chemical",
+      "search compounds",
+      "retrieve properties",
+      "bioactivity"
+    ],
+    "when_to_use": "When you need to find compounds by name, structure, or formula and obtain their properties or bioactivity data.",
+    "limitations": "Similarity searches may be asynchronous and can take up to 30 seconds for large queries."
+  },
+  "obspy-datacenter-client": {
+    "function_description": "Retrieves seismic waveforms and related metadata (miniseed, stationxml, quakeml) from fdsn data centers.",
+    "tags": [
+      "miniseed",
+      "download data",
+      "station metadata",
+      "event metadata"
+    ],
+    "when_to_use": "When you need to obtain waveforms and station/event information from multiple seismic data centers.",
+    "limitations": "Cannot retrieve data from providers that do not implement fdsn services or lack requested data types."
+  },
+  "python-scala-oop": {
+    "function_description": "Translate Python class definitions into equivalent Scala OOP code.",
+    "tags": [
+      "python",
+      "translate",
+      "scala",
+      "oop"
+    ]
+  },
+  "python-parallelization": {
+    "function_description": "Python code: transform sequential code into parallel or concurrent execution patterns.",
+    "tags": [
+      "python",
+      "parallelize",
+      "concurrency",
+      "vectorization"
+    ],
+    "when_to_use": "Use when a Python script runs sequentially and performance bottlenecks are CPU- or I/O-bound.",
+    "limitations": "Cannot parallelize code with shared mutable state or inter-iteration dependencies, and may not speed up tiny workloads."
+  },
+  "python-scala-functional": {
+    "function_description": "Translate Python code into equivalent Scala functional programming code.",
+    "tags": [
+      "python",
+      "translate",
+      "functional programming",
+      "pattern matching"
+    ],
+    "limitations": "Cannot translate Python features lacking direct Scala equivalents, such as implicit conversions."
+  },
+  "logistics-rules-to-optimization": {
+    "function_description": "Translate logistics rules text into optimization model variables and constraints.",
+    "tags": [
+      "text",
+      "build model",
+      "capacity constraints",
+      "routing"
+    ],
+    "when_to_use": "Use when problem statements provide operational rules in words that need conversion to an optimization model."
+  },
+  "pca-decomposition": {
+    "function_description": "Performs PCA with varimax rotation on a pandas DataFrame to generate factor loadings and component scores.",
+    "tags": [
+      "dataframe",
+      "dimensionality reduction",
+      "factor analysis",
+      "varimax rotation"
+    ],
+    "when_to_use": "When many correlated variables need reduction and underlying factor groups identification.",
+    "limitations": "Cannot process non\u2011numeric or unstandardized data; categorical variables must be encoded first."
+  },
+  "python-scala-libraries": {
+    "function_description": "source code: map Python constructs to equivalent Scala library usage",
+    "tags": [
+      "code",
+      "translate example",
+      "library mapping",
+      "syntax conversion"
+    ]
+  },
+  "python-scala-collections": {
+    "function_description": "Translates Python collection definitions and operations into equivalent Scala collection code.",
+    "tags": [
+      "python",
+      "translate collections",
+      "list",
+      "map"
+    ]
+  },
+  "qutip": {
+    "function_description": "Simulates time evolution of quantum states and operators using QuTiP solvers.",
+    "tags": [
+      "quantum",
+      "simulate dynamics",
+      "expectation values",
+      "visualization"
+    ],
+    "when_to_use": "Use when you need to model closed or open quantum system dynamics.",
+    "limitations": "Cannot simulate systems whose Hilbert space dimension exceeds available memory."
+  },
+  "python-scala-syntax-mapping": {
+    "function_description": "Translates Python source code snippets into equivalent Scala code.",
+    "tags": [
+      "python",
+      "translate",
+      "scala",
+      "code conversion"
+    ],
+    "when_to_use": "Use when you need to convert Python code to Scala for migration or learning."
+  },
+  "rdkit": {
+    "function_description": "Read and write molecular structures in formats like SMILES, MOL, and InChI.",
+    "tags": [
+      "mol",
+      "convert",
+      "descriptor calculation",
+      "fingerprint similarity"
+    ],
+    "when_to_use": "When you need to import, export, or process chemical structures for cheminformatics tasks.",
+    "limitations": "Cannot process non\u2011chemical files and assumes input strings are valid chemical representations."
+  },
+  "react-best-practices": {
+    "function_description": "React/Next.js code: provides performance optimization guidelines and refactoring rules.",
+    "tags": [
+      "react",
+      "optimize performance",
+      "refactor code",
+      "layout shift"
+    ],
+    "when_to_use": "Use when refactoring or writing React/Next.js components to improve performance and fix visual issues."
+  },
+  "planning-with-files": {
+    "function_description": "Manages persistent markdown planning files for multi-step tasks.",
+    "tags": [
+      "markdown",
+      "manage planning",
+      "log errors",
+      "track progress"
+    ],
+    "when_to_use": "Use for multi-step projects requiring organized planning and error tracking.",
+    "limitations": "Only works with markdown planning files located in the project directory."
+  },
+  "report-generator": {
+    "function_description": "Creates a JSON compression report for original and compressed video files.",
+    "tags": [
+      "video",
+      "generate report",
+      "compression stats",
+      "json output"
+    ],
+    "when_to_use": "Use when you need to document video processing results with compression statistics."
+  },
+  "power-flow-data": {
+    "function_description": "Load MATPOWER network JSON file and extract bus, generator, and branch information.",
+    "tags": [
+      "json",
+      "load network",
+      "bus mapping",
+      "total load"
+    ]
+  },
+  "python-scala-idioms": {
+    "function_description": "Translate Python code into idiomatic Scala source.",
+    "tags": [
+      "python",
+      "translate code",
+      "idiomatic scala",
+      "functional style"
+    ],
+    "when_to_use": "When you need Scala code that follows functional, immutable best practices for existing Python logic.",
+    "limitations": "Cannot translate Python features that lack direct Scala equivalents, such as dynamic typing or runtime metaprogramming."
+  },
+  "pdf": {
+    "function_description": "Operates on PDF files to perform merging, splitting, text extraction, and other common PDF manipulations.",
+    "tags": [
+      "pdf",
+      "merge",
+      "split",
+      "extract text"
+    ],
+    "when_to_use": "Use when you need to combine, split, or extract content from PDF documents.",
+    "limitations": "Does not handle PDF form filling; see forms.md for that."
+  },
+  "sampling-and-indexing": {
+    "function_description": "Video file: select frame indices at a fixed stride and generate matching downstream outputs.",
+    "tags": [
+      "video",
+      "sample frames",
+      "interval instructions",
+      "per-frame artifacts"
+    ],
+    "when_to_use": "When you must define a sampling stride/FPS and keep all downstream outputs aligned to the same frame range."
+  },
+  "restclient-migration": {
+    "function_description": "Migrate Java Spring code from RestTemplate to RestClient API.",
+    "tags": [
+      "java",
+      "migrate api",
+      "resttemplate",
+      "restclient"
+    ],
+    "when_to_use": "When upgrading to Spring 6.1 or Spring Boot 3.2 and replacing RestTemplate calls.",
+    "limitations": "Only supports synchronous RestClient migration; does not cover reactive WebClient usage."
+  },
+  "search-accommodations": {
+    "function_description": "Retrieves accommodation listings for a given city name.",
+    "tags": [
+      "city",
+      "search accommodations",
+      "travel",
+      "lodging"
+    ],
+    "when_to_use": "When you need to find places to stay in a specific city."
+  },
+  "reflow_machine_maintenance_guidance": {
+    "function_description": "Processes CSV thermocouple and MES data to compute reflow equipment performance metrics.",
+    "tags": [
+      "csv",
+      "compute metrics",
+      "reflow analysis",
+      "equipment maintenance"
+    ],
+    "when_to_use": "Use when answering reflow equipment maintenance questions using thermocouple, MES, and defect data.",
+    "limitations": "Assumes CSV inputs are time\u2011sorted and contain positive time intervals; cannot handle unsorted or zero\u2011dt data."
+  },
+  "reflow-profile-compliance-toolkit": {
+    "function_description": "process handbook PDF and thermocouple CSV to extract limits and compute deterministic reflow metrics",
+    "tags": [
+      "pdf",
+      "extract limits",
+      "compute metrics",
+      "reflow analysis"
+    ],
+    "when_to_use": "Use when reflow questions need limits from handbook and deterministic thermocouple calculations.",
+    "limitations": "Cannot handle missing handbook sections or non\u2011monotonic thermocouple timestamps."
+  },
+  "search-attractions": {
+    "function_description": "Searches a city name string and returns a list of attractions.",
+    "tags": [
+      "text",
+      "search attractions",
+      "travel",
+      "city"
+    ],
+    "when_to_use": "When you need to find points of interest for a specific city."
+  },
+  "scipy-curve-fit": {
+    "function_description": "Fits a first-order step response model to experimental time-series data using nonlinear least squares.",
+    "tags": [
+      "data",
+      "fit model",
+      "parameter estimation",
+      "fit quality"
+    ],
+    "when_to_use": "When you have step response measurements and need to estimate gain and time constant.",
+    "limitations": "Assumes data follows a first-order model and requires reasonable initial guesses."
+  },
+  "safety-interlocks": {
+    "function_description": "Applies safety limits to control commands using measurement thresholds, clamping outputs and triggering emergency cutoffs.",
+    "tags": [
+      "control",
+      "apply safety",
+      "clamp output",
+      "log events"
+    ],
+    "when_to_use": "Use when a control system may exceed safe measurement limits or output saturation.",
+    "limitations": "Cannot handle NaN or infinite measurements without prior validation."
+  },
+  "search-cities": {
+    "function_description": "Searches a text file to return cities for a given state.",
+    "tags": [
+      "text",
+      "search cities",
+      "state mapping",
+      "geography"
+    ]
+  },
+  "search-driving-distance": {
+    "function_description": "Retrieves driving distance and duration between two location strings using Google Distance Matrix.",
+    "tags": [
+      "text",
+      "lookup distance",
+      "driving mode",
+      "duration"
+    ],
+    "when_to_use": "When you need the travel distance and time between two places."
+  },
+  "search-restaurants": {
+    "function_description": "Queries restaurant listings for a specified city.",
+    "tags": [
+      "restaurant",
+      "search",
+      "city",
+      "listings"
+    ],
+    "when_to_use": "Use when you need restaurant options for a particular city."
+  },
+  "routing-subtour-elimination": {
+    "function_description": "routing MIP model: adds subtour\u2011elimination constraints to binary arc variables.",
+    "tags": [
+      "mip",
+      "subtour elimination",
+      "vehicle routing",
+      "connectivity"
+    ],
+    "when_to_use": "When a vehicle routing model needs to prevent depot\u2011disconnected cycles in binary arc variables.",
+    "limitations": "Cannot efficiently handle very large station sets due to memory or exponential constraint growth."
+  },
+  "search-flights": {
+    "function_description": "Filters a cleaned flights CSV for given origin, destination, and date.",
+    "tags": [
+      "csv",
+      "filter rows",
+      "flight routes",
+      "date filter"
+    ],
+    "when_to_use": "When you need to find flights between two cities on a specific date.",
+    "limitations": "Cannot process uncleaned or missing CSV data."
+  },
+  "segment-combiner": {
+    "function_description": "Combines multiple segment JSON files into a single unified segments JSON file.",
+    "tags": [
+      "json",
+      "combine",
+      "segments",
+      "video processing"
+    ],
+    "when_to_use": "Use when you need to merge multiple segment JSON files into one for video processing.",
+    "limitations": "Requires each input JSON to contain a `segments` array."
+  },
+  "scip-opt": {
+    "function_description": "Solve mixed-integer optimization models using SCIP via PySCIPOpt.",
+    "tags": [
+      "model",
+      "solve",
+      "mixed-integer",
+      "routing"
+    ],
+    "when_to_use": "Use when the task requires minimizing or maximizing an objective with integer/continuous decisions and constraints.",
+    "limitations": "It cannot verify solution feasibility beyond SCIP's status; external validation is required."
+  },
+  "seismic-picker-selection": {
+    "function_description": "Selects appropriate seismic event detection or phase picking method for waveform data.",
+    "tags": [
+      "seismic",
+      "method selection",
+      "event detection",
+      "phase picking"
+    ],
+    "when_to_use": "When choosing an event detection or phase picking method for seismic waveforms."
+  },
+  "senior-data-engineer": {
+    "function_description": "Generates Airflow DAGs from YAML pipeline definitions to orchestrate ETL workflows.",
+    "tags": [
+      "yaml",
+      "pipeline orchestration",
+      "data quality",
+      "performance optimization"
+    ]
+  },
+  "simulation-metrics": {
+    "function_description": "Computes control system performance metrics (rise time, overshoot, steady-state error, settling time) from time-value arrays.",
+    "tags": [
+      "timeseries",
+      "calculate metrics",
+      "rise time",
+      "overshoot"
+    ]
+  },
+  "senior-data-scientist": {
+    "function_description": "Operates on datasets to design experiments, engineer features, and evaluate models for production.",
+    "tags": [
+      "data",
+      "experiment design",
+      "feature engineering",
+      "model deployment"
+    ],
+    "when_to_use": "Use when building end-to-end machine learning pipelines for scalable production."
+  },
+  "silence-detector": {
+    "function_description": "Detects initial silence segments in energy JSON data by threshold analysis.",
+    "tags": [
+      "json",
+      "detect silence",
+      "energy threshold",
+      "segment detection"
+    ],
+    "when_to_use": "When you need to find the initial silent portion of a recording using pre\u2011computed energy data.",
+    "limitations": "Cannot detect silence without pre\u2011computed energy data and returns empty list if no clear transition."
+  },
+  "senior-java": {
+    "function_description": "Generates Spring Boot Java project skeletons with layered architecture and optional security configuration.",
+    "tags": [
+      "java",
+      "project scaffolding",
+      "dependency analysis",
+      "security config"
+    ],
+    "when_to_use": "When starting a new Spring Boot microservice, monolith, or reactive application."
+  },
+  "speaker-clustering": {
+    "function_description": "Cluster speaker embeddings to identify distinct speakers.",
+    "tags": [
+      "embeddings",
+      "speaker clustering",
+      "silhouette",
+      "normalization"
+    ],
+    "when_to_use": "Use after extracting speaker embeddings from VAD segments to group similar speakers.",
+    "limitations": "Requires precomputed speaker embeddings; does not process raw audio."
+  },
+  "setup-env": {
+    "function_description": "Manages Python project environments by creating venv, installing dependencies, and running scripts with uv.",
+    "tags": [
+      "python",
+      "environment",
+      "install dependencies",
+      "run scripts"
+    ],
+    "when_to_use": "When you need to set up a Python project's virtual environment and run its code.",
+    "limitations": "Cannot operate without uv installed or without a pyproject.toml or requirements.txt file."
+  },
+  "senior-security": {
+    "function_description": "Operates on project directories to automate threat modeling, security auditing, and penetration testing.",
+    "tags": [
+      "directory",
+      "security audit",
+      "threat modeling",
+      "pentest"
+    ],
+    "when_to_use": "Use when you need to assess and improve the security posture of a codebase or project."
+  },
+  "seisbench-model-api": {
+    "function_description": "Processes obspy stream waveforms to generate annotations or classification results using pretrained SeisBench models.",
+    "tags": [
+      "obspy stream",
+      "annotate",
+      "phase picking",
+      "earthquake detection"
+    ],
+    "when_to_use": "Use when you need to annotate or classify seismic waveforms from an obspy stream.",
+    "limitations": "Cannot handle waveforms with amplitudes \u22641e-10 without scaling due to numerical instability."
+  },
+  "speech-to-text": {
+    "function_description": "Transcribes video files to timestamped text.",
+    "tags": [
+      "video",
+      "transcribe",
+      "timestamp",
+      "text"
+    ],
+    "when_to_use": "When you need a written transcript of a video with timestamps."
+  },
+  "syzlang-ioctl-basics": {
+    "function_description": "Creates or updates ioctl syscall definitions in syzlang .txt description files.",
+    "tags": [
+      "txt",
+      "define ioctl",
+      "syscall syntax",
+      "flag set"
+    ],
+    "when_to_use": "When adding or editing ioctl definitions in syzlang description files.",
+    "limitations": "Cannot resolve architecture-specific constants not defined in the file."
+  },
+  "syzkaller-build-loop": {
+    "function_description": "Compiles .txt syscall description files into syzkaller descriptions.",
+    "tags": [
+      "txt",
+      "compile descriptions",
+      "build syzkaller",
+      "constants"
+    ],
+    "when_to_use": "When you add or edit syscall description files and need to rebuild the syzkaller descriptions.",
+    "limitations": "Fails if required constants are missing or types are undefined."
+  },
+  "temporal-python-testing": {
+    "function_description": "Provides testing strategies and resources for Temporal Python workflows and activities.",
+    "tags": [
+      "temporal",
+      "test workflows",
+      "mock activities",
+      "replay testing"
+    ],
+    "when_to_use": "Use for unit, integration, replay, or local development testing of Temporal Python workflows."
+  },
+  "testing-python": {
+    "function_description": "Python test files \u2013 provides guidelines for writing atomic, well-structured unit tests.",
+    "tags": [
+      "python",
+      "write tests",
+      "parameterize",
+      "mocking"
+    ]
+  },
+  "sqlite-map-parser": {
+    "function_description": "Parse a SQLite database and output its contents as structured JSON.",
+    "tags": [
+      "sqlite",
+      "export json",
+      "schema exploration",
+      "join tables"
+    ],
+    "when_to_use": "Use when you need to transform a SQLite database into a JSON representation."
+  },
+  "syz-extract-constants": {
+    "function_description": "Create a .const file to define kernel constants for a syzlang .txt description.",
+    "tags": [
+      "const",
+      "define constants",
+      "kernel ioctls",
+      "extract constants"
+    ],
+    "when_to_use": "When you need kernel constant values but lack kernel source.",
+    "limitations": "Cannot extract constants without kernel source; only manual .const files work."
+  },
+  "suricata-rules-basics": {
+    "function_description": "Suricata rule \u2013 compose HTTP detection rule using sticky buffers and PCRE patterns.",
+    "tags": [
+      "suricata",
+      "compose rule",
+      "http detection",
+      "pcre matching"
+    ],
+    "when_to_use": "When you need to detect custom telemetry exfiltration over HTTP.",
+    "limitations": "Does not generate a complete rule; user must supply specific patterns and ensure correct buffers."
+  },
+  "sympy": {
+    "function_description": "Symbolic expression \u2013 performs symbolic mathematics operations such as algebra, calculus, solving, and code generation.",
+    "tags": [
+      "expression",
+      "symbolic math",
+      "solve equations",
+      "code generation"
+    ],
+    "when_to_use": "When you need exact symbolic results for equations, calculus, physics, or code generation."
+  },
+  "spring-security-6": {
+    "function_description": "Java source files: migrate Spring Security 5 configuration to Spring Security 6 style.",
+    "tags": [
+      "java",
+      "migrate security",
+      "update annotations",
+      "lambda dsl"
+    ],
+    "when_to_use": "When upgrading a Spring Boot 2 project to Spring Boot 3 with Spring Security 5."
+  },
+  "state-space-linearization": {
+    "function_description": "Linearizes a nonlinear dynamical system and discretizes its state-space representation.",
+    "tags": [
+      "dynamics",
+      "linearize",
+      "jacobian",
+      "discretize"
+    ],
+    "when_to_use": "When the operating point of a nonlinear system changes significantly."
+  },
+  "ssh-penetration-testing": {
+    "function_description": "Perform comprehensive SSH security assessment including enumeration, credential attacks, vulnerability exploitation, and tunneling.",
+    "tags": [
+      "ssh",
+      "penetration test",
+      "credential attack",
+      "tunnel testing"
+    ],
+    "when_to_use": "Use when you need to evaluate the security of an SSH service on a target network."
+  },
+  "spring-boot-migration": {
+    "function_description": "Updates Maven pom.xml to migrate Spring Boot 2 projects to Spring Boot 3.",
+    "tags": [
+      "xml",
+      "upgrade springboot",
+      "remove dependencies",
+      "java version"
+    ],
+    "when_to_use": "Use when upgrading a Spring Boot 2.x application to Spring Boot 3.x.",
+    "limitations": "Cannot automatically refactor javax to jakarta imports; manual code changes may be needed."
+  },
+  "threejs": {
+    "function_description": "Export per-part OBJ (and optional URDF) files from a Three.js scene graph.",
+    "tags": [
+      "threejs",
+      "export obj",
+      "urdf",
+      "partition parts"
+    ],
+    "when_to_use": "When you need to extract individual robot links as OBJ/URDF from a Three.js scene.",
+    "limitations": "Cannot export parts without named groups or without baking world transforms."
+  },
+  "trend-analysis": {
+    "function_description": "time series dataset: calculate trend significance with linear regression or Sen's slope",
+    "tags": [
+      "csv",
+      "trend analysis",
+      "linear regression",
+      "sen slope"
+    ],
+    "when_to_use": "when you need to determine a significant increase or decrease in a variable over time",
+    "limitations": "requires at least 8\u201110 data points; linear regression assumes linear relationship and normal residuals"
+  },
+  "uv-package-manager": {
+    "function_description": "Operates on pyproject.toml files to install and manage Python dependencies and virtual environments.",
+    "tags": [
+      "pyproject",
+      "manage dependencies",
+      "virtual env",
+      "python version"
+    ],
+    "when_to_use": "Use when setting up new Python projects, managing dependencies, or creating virtual environments quickly."
+  },
+  "transit-least-squares": {
+    "function_description": "Detect exoplanet transits in light curve data using the Transit Least Squares algorithm.",
+    "tags": [
+      "lightcurve",
+      "detect transits",
+      "exoplanet",
+      "period refinement"
+    ],
+    "when_to_use": "Use this skill when you need to find exoplanet transit signals in a light curve.",
+    "limitations": "Requires flux uncertainties; cannot operate without flux_err and may misinterpret periods with data gaps."
+  },
+  "suricata-offline-evejson": {
+    "function_description": "Runs Suricata on a PCAP file offline and extracts alerts from the generated eve.json.",
+    "tags": [
+      "pcap",
+      "run suricata",
+      "extract alerts",
+      "eve json"
+    ],
+    "when_to_use": "When you need to analyze a PCAP file with Suricata offline."
+  },
+  "vehicle-dynamics": {
+    "function_description": "Operates on vehicle state data to compute safety metrics such as following distance and collision time.",
+    "tags": [
+      "vehicle",
+      "calculate safety",
+      "time-to-collision",
+      "mode selection"
+    ],
+    "when_to_use": "Use when simulating vehicle motion to assess safe following distances and collision risk."
+  },
+  "timeseries-detrending": {
+    "function_description": "Applies Hodrick\u2011Prescott filter to economic time series to extract trend and cyclical components.",
+    "tags": [
+      "timeseries",
+      "detrend",
+      "hp filter",
+      "log transform"
+    ],
+    "when_to_use": "When you need to separate long\u2011term trend from business\u2011cycle fluctuations in macroeconomic data.",
+    "limitations": "Cannot process series with negative values or zeros for log transformation; requires appropriate \u03bb selection."
+  },
+  "text-to-speech": {
+    "function_description": "Processes TTS audio files to clean, normalize loudness, and prepare segment boundaries for video.",
+    "tags": [
+      "audio",
+      "mastering",
+      "loudness normalization",
+      "segment handling"
+    ],
+    "when_to_use": "Use when you need ready\u2011to\u2011publish TTS audio for video integration.",
+    "limitations": "Cannot process non\u2011audio files and assumes input sample rate is known."
+  },
+  "usgs-data-download": {
+    "function_description": "Download USGS gage height data into a pandas DataFrame.",
+    "tags": [
+      "dataframe",
+      "download data",
+      "gage height",
+      "usgs"
+    ],
+    "when_to_use": "Use when you need water level measurements for specific USGS stations over a date range.",
+    "limitations": "Cannot fetch daily gage height if unavailable and may hit API rate limits without throttling."
+  },
+  "web-interface-guidelines": {
+    "function_description": "HTML/JSX code: audit for Vercel web interface compliance.",
+    "tags": [
+      "html",
+      "review",
+      "accessibility",
+      "performance"
+    ],
+    "when_to_use": "Use when checking a web page\u2019s UI code for Vercel compliance before release.",
+    "limitations": "It cannot modify code; it only identifies non\u2011compliant patterns."
+  },
+  "whisper-transcription": {
+    "function_description": "Transcribe audio or video files and output word-level timestamps.",
+    "tags": [
+      "audio",
+      "transcribe",
+      "timestamps",
+      "word detection"
+    ],
+    "when_to_use": "When you need a transcript with word-level timestamps from an audio or video file.",
+    "limitations": "Assumes clear speech; tiny model may miss words in noisy or accented audio."
+  },
+  "text-parser": {
+    "function_description": "Parse plain text files to extract key-value pairs for PDF filling.",
+    "tags": [
+      "txt",
+      "extract data",
+      "pdf filling",
+      "key-value"
+    ]
+  },
+  "workload-balancing": {
+    "function_description": "Distribute a list of tasks across parallel workers to balance load and reduce completion time.",
+    "tags": [
+      "tasks",
+      "load balancing",
+      "dynamic scheduling",
+      "work stealing"
+    ],
+    "when_to_use": "Use when you have multiple tasks that need to be processed in parallel and want to minimize stragglers.",
+    "limitations": "Assumes tasks are independent and cannot handle interdependent or stateful workloads."
+  },
+  "xlsx": {
+    "function_description": "Manipulate .xlsx workbooks: create, edit, format, add formulas, and verify errors.",
+    "tags": [
+      "xlsx",
+      "edit",
+      "format",
+      "error check"
+    ],
+    "when_to_use": "When a user needs to build or modify an Excel financial model while preserving formulas and formatting.",
+    "limitations": "Cannot replace formulas with hard\u2011coded values; all calculations must remain as Excel formulas."
+  },
+  "trivy-offline-vulnerability-scanning": {
+    "function_description": "Scans a dependency lock file for vulnerabilities using Trivy in offline mode.",
+    "tags": [
+      "lockfile",
+      "vulnerability scan",
+      "offline mode",
+      "air-gapped"
+    ],
+    "when_to_use": "When scanning dependencies in an air\u2011gapped environment without internet access.",
+    "limitations": "Requires a pre\u2011downloaded Trivy database and the Trivy executable to be installed."
+  },
+  "video-frame-extraction": {
+    "function_description": "video files: extract individual frames as image files",
+    "tags": [
+      "video",
+      "extract frames",
+      "thumbnail generation",
+      "frame sampling"
+    ],
+    "when_to_use": "Use when you need frames for training data, thumbnails, or video analysis.",
+    "limitations": "Cannot process videos unsupported by OpenCV and requires read/write permissions and enough disk space."
+  },
+  "voice-activity-detection": {
+    "function_description": "Detects speech segments in audio recordings by performing voice activity detection.",
+    "tags": [
+      "audio",
+      "detect speech",
+      "segment audio",
+      "remove silence"
+    ],
+    "when_to_use": "Use before speaker diarization to filter silence and segment speech in recordings.",
+    "limitations": "Cannot process audio without proper frame size or may miss very short speech segments."
+  },
+  "video-processor": {
+    "function_description": "Processes video files by removing specified segments and concatenating the remaining parts.",
+    "tags": [
+      "video",
+      "remove segments",
+      "highlight reel",
+      "batch processing"
+    ],
+    "when_to_use": "Use when you need to cut out pauses, openings, or unwanted sections from a video.",
+    "limitations": "Cuts are frame-accurate only and require sufficient disk space for the output file."
+  },
+  "threat-detection": {
+    "function_description": "Analyzes pcap traffic to detect port scans, DoS attacks, and C2 beaconing.",
+    "tags": [
+      "pcap",
+      "detect threats",
+      "port scan",
+      "c2 beaconing"
+    ],
+    "limitations": "Detects port scans only when entropy, SYN ratio, and unique ports thresholds are all exceeded."
+  },
+  "yaml-config": {
+    "function_description": "Read and write YAML configuration files using safe_load and dump.",
+    "tags": [
+      "yaml",
+      "read write",
+      "safe load",
+      "config files"
+    ],
+    "when_to_use": "When loading or saving configuration data in YAML format.",
+    "limitations": "Cannot parse malformed YAML; raises YAMLError."
+  },
+  "vulnerability-csv-reporting": {
+    "function_description": "Creates a CSV file of vulnerabilities from Trivy JSON scan data with severity filtering.",
+    "tags": [
+      "csv",
+      "generate csv",
+      "vulnerability data",
+      "severity filter"
+    ],
+    "when_to_use": "Use when you need tabular vulnerability data for compliance audits or executive summaries.",
+    "limitations": "Cannot represent nested or binary data; only flat structures are supported."
+  }
+}
